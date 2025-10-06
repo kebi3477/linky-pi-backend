@@ -22,7 +22,6 @@ LinkyPi is a link sharing and management platform where users can create blocks 
 ### Authentication & Security
 - **Passport** - Authentication middleware
 - **JWT (passport-jwt)** - Token-based authentication
-- **OAuth 2.0 (passport-google-oauth20)** - Social authentication
 - **bcrypt** - Password hashing
 
 ### Validation & Documentation
@@ -178,11 +177,6 @@ JWT_EXPIRATION=1d
 JWT_REFRESH_SECRET=your-super-secret-refresh-key-change-this-in-production
 JWT_REFRESH_EXPIRATION=7d
 
-# OAuth
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-GOOGLE_CALLBACK_URL=http://localhost:3000/api/auth/google/callback
-
 # App
 PORT=3000
 NODE_ENV=development
@@ -238,7 +232,6 @@ npm run start:prod
 ### Authentication
 - JWT-based authentication
 - Bearer token authorization
-- OAuth 2.0 support (Google)
 - Protected routes with `@UseGuards(JwtAuthGuard)`
 
 ### Validation
@@ -269,7 +262,6 @@ npm run start:prod
 ### Security
 - **JWT Secrets:** Must be changed in production
 - **CORS:** Currently open, should be configured for production
-- **OAuth:** Requires valid Google credentials
 
 ### Database
 - **Auto-sync:** Enabled in development (`synchronize: true`)

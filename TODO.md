@@ -140,7 +140,7 @@
 ---
 
 ## Deployment
-- [ ] Create Dockerfile
+- [x] Create Dockerfile
 - [x] Create docker-compose.yml ✅ (for PostgreSQL)
 - [ ] Set up CI/CD pipeline
 - [ ] Configure production environment
